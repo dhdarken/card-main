@@ -1,0 +1,99 @@
+:root {
+  --Soft-violet: hsl(273, 75%, 66%);
+  --Soft-blue: hsl(240, 73%, 65%);
+  --Very-dark-desaturated-blue: hsla(238, 29%, 16%, 0.842);
+  --Soft-red: hsl(14, 88%, 65%);
+  --Very-dark-grayish-blue: hsla(237, 12%, 33%, 0.822);
+  --Dark-grayish-blue: hsla(240, 6%, 50%, 0.144);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+  --Font-size: 12px;
+  --Mobile: 375px;
+  --Desktop: 1440px;
+}
+
+* {
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--Soft-violet);
+  background: linear-gradient(
+    180deg,
+    rgba(142, 52, 207, 0) 0%,
+    var(--Soft-violet) 0%,
+    var(--Soft-blue) 70%
+  );
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  height: 380px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Light-grayish-blue);
+  border-radius: 20px;
+  padding-top: 60px;
+}
+
+.dropdown {
+  display: none;
+}
+
+.image {
+  height: 150px;
+  width: 300px;
+  position: absolute;
+  top: 40px;
+}
+
+.arrow {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.arrowup {
+  border: none;
+  display: grid;
+}
+
+.arrowup > img {
+  height: 10px;
+  width: 10px;
+  display: none;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.aling {
+  display: grid;
+  grid-template-columns: 230px 10px;
+  color: var(--Very-dark-desaturated-blue);
+  width: 90%;
+  height: 10%;
+  justify-content: space-around;
+  font-size: var(--Font-size);
+  font-weight: 400;
+  border-bottom: 0.1px solid var(--Dark-grayish-blue);
+  text-align: left;
+  margin: 5px;
+}
+
+.pparagraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
